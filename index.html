@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <meta name="description" content="Welcome to the official site of Healthyfood">
+    <meta name="keywords" content="salad, healthy, food, delivery">
+    <meta name="author" content="Franco Juárez">  
+    <title>Healthyfood</title>
+    <script src="https://kit.fontawesome.com/2632413ea4.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <!-- INICIO DE LA NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Healthyfood logo."></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav pt-2">
+                    <li class="nav-item p-2">
+                        <a class="nav-link p-1 fs-6" aria-current="page" href="#aboutSection">About</a>
+                    </li>
+                    <li class="nav-item p-2 fs-6">
+                        <a class="nav-link p-1" href="#howSection">How it works</a>
+                    </li>
+                    <li class="nav-item p-2 fs-6">
+                        <a class="nav-link p-1" href="#menuSection">Menu</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <button onclick="contactScroll()" class="navcontactBtn nav-link fs-6">Contact us</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- INICIO DEL MAIN CONTENT -->
+    <main>
+        <!-- ORDER SECTION -->
+        <section class="orderSection">
+            <div class="orderInfo">
+                <h1>The simplest way to eat healthy</h1>
+                <p>Day to day nutritionist-designed meals.</p> 
+                <p>Organic, healthy, delicious.</p>
+                <a href="#menuSection">Order now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="imgOrder">
+                <img src="img/saladBackground.png" alt="Cherry tomatoes, romaine lettuce and french lettuce  salad in a round white bold.">
+            </div>
+        </section>
+        <!-- ABOUT SECTION -->
+        <section id="aboutSection">
+            <div class="aboutDescription">
+                <header><p>About</p></header>
+                <h2>The importance of a balanced diet</h2>
+                <p>A balanced diet supplies the nutrients your body needs to work effectively. Without balanced nutrition, your body is more prone to disease, infection, fatigue, and low performance.</p>
+                <div class="aboutActionDiv">
+                    <a href="#" class="contactBtn">Learn More</a>
+                </div>
+            </div>
+            <div class="imgAbout">
+                <img src="img/soupBackground.png" alt="Squash soup with vegetarian dumplings accompanied with a drizzle of seeds and broccoli">
+            </div>
+        </section>
+        <!-- HOW SECTION -->
+        <section id="howSection">
+            <div class="howHeaderDiv">
+                <header>Work</header>
+                <h2>How It Works</h2>
+                <p>Order food to your door with one click</p>
+            </div>
+            <div class="howCardDiv">
+                <div class="howCard">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <h3>Discover your favorite meals</h3>
+                    <p>Choose you meals from our diverse weekly menu. Find gluten or dairy free, low carb.</p>
+                </div>
+                <div class="howCard">
+                    <i class="fa-solid fa-seedling"></i>
+                    <h3>Top quality ingredients</h3>
+                    <p>Enjoy organic fresh produce and clean ingredients. Proud certified organic handler.</p>
+                </div>
+                <div class="howCard">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Track your order in real-time.</h3>
+                    <p>Watch your order every step of the way, from the minute you place it, to when it’s outside.</p>
+                </div>
+            </div>
+        </section>
+        <!-- MENU SECTION -->
+        <section id="menuSection" class="menuSection">
+            <header>Menu</header>
+            <h2>Explore Our Best Menu</h2>
+            <p>We believe the quality of the food you eat matters</p>
+            <div class="menuContainer">
+            </div>
+            <button class="loadMoreBtn" onclick="loadMoreBtn()">Novedades</button>
+        </section>
+        <!-- TESTIMONIAL SECTION -->
+        <section class="testimonialSection">
+            <div class="headerTestimonial">
+                <header>Testimonial</header>
+                <h2>Our clients experiences</h2>
+                <p>Now it's your turn to discover why we're the people's choice</p>
+            </div>
+            <div class="testimonyDiv">
+            </div>
+        </section>
+        <!-- CONSULTING SECTION -->
+        <section class="consultingSection">
+            <form class="emailInput">
+                <label for="subscribe"><h2>Receive our latest offers</h2></label>
+                <input id="subscribe" class="userEmail" type="email" placeholder="youremail@gmail.com" required>
+                <button class="sendEmail">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <!-- INICIO DE FOOTER -->
+    <footer>
+        <div class="footerContent">
+            <div class="logoAndTermsDiv">
+                <a class="footerLogo" href="/index.html"><img src="img/logoFooter.png" alt="Healthyfood logo."></a>
+                <div class="termsDiv">
+                    <a href="error404.html">Terms & Conditions</a>
+                    <a href="error404.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="columnFooter">
+                <address>135 Spring St, New York.</address>
+                <p>291568754</p>
+                <p><a href="mailto: restaurant@example.com">mail@gmail.com</a></p>
+                <div class="socialMediaLinks">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="lni lni-facebook"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="ri-youtube-line"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="lni lni-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="credits">2022 @ All rights by <a href="https://github.com/Franco-Juarez" target="_blank">Franco Juárez</a></p>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="app/index.js"></script>
+<script src="app/products.js"></script>
+<script src="app/email.js"></script>
+</html>
