@@ -3,10 +3,10 @@
 
 function loadMoreBtn () {
     const btnContent = document.querySelector(".loadMoreBtn")
-    if (btnContent.innerText === "New products") {
+    if (btnContent.innerText === "New Products") {
         btnContent.innerText = "Show Less";
     } else {
-        btnContent.innerText = "New products";
+        btnContent.innerText = "New Products";
     }
     const displayNone = document.querySelector(".displayNone");
     displayNone.classList.toggle("displayFlex");
